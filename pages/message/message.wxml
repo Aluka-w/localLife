@@ -1,0 +1,14 @@
+<navigator wx:for='{{articleList}}' wx:key="{{index}}"  url='/pages/article/article?title={{it.title}}' class='article' wx:for-item='it' >
+  <view class='top'>
+    <text class='title'>{{it.title}}</text>
+    <text class='month'>{{it.month}}</text>
+  </view>
+  <view class='middle'>
+    <image src='{{it.img}}'></image>
+    <text>{{it.subTitle}}</text>
+  </view>
+  <view class='bottom'>
+    <text>阅读全文....</text>
+  </view>
+</navigator>
+<view id='bottom'></view>

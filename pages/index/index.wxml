@@ -1,0 +1,28 @@
+<!--轮播图  -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" indicator-active-color='tomato' class='slider'>
+  <block wx:for="{{slides}}" wx:key='id'>
+    <swiper-item class='slider-item'>
+      <navigator wx:if='{{item.link}}' url='{{item.link}}'> 
+        <image bindlongtap='openImg'  src="{{item.image}}" mode='aspectFill' class="slide-image" />
+      </navigator>
+      <image wx:else bindlongtap='openImg' src='{{item.image}}' mode='aspectFill' class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!--九宫格  -->
+<view class='grids'>
+  <navigator class='grids-item'  wx:for='{{categories}}' wx:key='{{item.id}}' url='/pages/list/list?categories={{item.id}}'>
+    <image  src='{{item.icon}}'/>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
+<!--广告  -->
+<view class='ad'>
+  <navigator url='/pages/list/list?type=recommend'>
+    <image src='/images/images/link-01.png'/>
+  </navigator>
+  <navigator url='/pages/forum/forum'>
+    <image src='/images/images/link-02.png'/>
+  </navigator>
+</view>
+<include src='../../includes/footer.wxml'></include>

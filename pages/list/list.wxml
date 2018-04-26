@@ -1,0 +1,23 @@
+<!--搜索按钮  -->
+<include src="/includes/searchBar.wxml" />
+<!--列表按钮  -->
+<view>
+  <navigator class='list' wx:for='{{ categoriesList }}' wx:key="{{item.id}}" url='/pages/detail/detail?item={{item.id}}'>
+    <image mode='aspectFill' class='list-img' src='{{ item.images[0] }}' />
+    <view class='detail'>
+      <text class='detail-title'>{{ item.name }}</text>
+      <text class='detail-phone'>电话 : {{ item.phone }}</text>
+      <text class='detail-address'>地址 : {{ item.address }}</text>
+      <text class='detail-time'>营业时间 :　{{ item.businessHours }}</text>
+    </view>
+    <view class='score'>{{ item.score }}</view>
+  </navigator>
+</view>
+<!--加载更多  -->
+<view class="weui-loadmore" wx:if="{{hasMore}}">
+  <view class="weui-loading"></view>
+  <view class="weui-loadmore__tips">正在加载</view>
+</view>
+<view wx:else class="weui-loadmore weui-loadmore_line">
+  <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+</view>

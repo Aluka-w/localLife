@@ -1,0 +1,39 @@
+.article {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 20rpx;
+  padding: 25rpx;
+}
+.article .top {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid #eee;
+}
+.title {
+  font-size: 45rpx;
+  color: #123;
+}
+.month {
+  font-size: 30rpx;
+  color: #456;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+.middle image {
+  margin: 20rpx 0;
+  widows: 100%;
+  height: 250rpx;
+}
+.middle text {
+  font-size: 25rpx;
+  padding-bottom: 15rpx; 
+  border-bottom: 1rpx solid #eee;
+  color: #456;
+}
+.bottom {
+  font-size: 32rpx;
+  color: #234;
+}

@@ -1,0 +1,30 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">{{title}}</view>
+        <view class="page__desc">王小波</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1"></view>
+            <view class="weui-article__section">
+                <view class="weui-article__title"></view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">黄金时代</view>
+                    <view class="weui-article__p">
+                        那一天我二十一岁，在我一生的黄金时代。我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程...可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我
+                    </view>
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="https://pic1.zhimg.com/80/v2-de07bc3c19d37fac80409903c28b4ea0_hd.jpg" mode="aspectFit" style="height: 180px" />
+                        <image class="weui-article__img" src="https://pic3.zhimg.com/80/v2-fd1148ab7c818e72f91cb6da3a282e3d_hd.jpg" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">爱你就像爱生命</view>
+                    <view class="weui-article__p">
+                        我把我整个灵魂都给你，连同它的怪癖，耍小脾气，忽明忽暗，一千八百种坏毛病。它真讨厌，只有一点好，爱你。我的灵魂里有很多地方玩世不恭 ，对人傲慢无礼，但是它有一个核心，这个核心害怕黑暗，柔弱得像绵羊一样。只有顶平等的友爱才能使他得到安慰。你对我是属于这个核心的。你想知道我对你的爱情是什么吗？就是从心底里喜欢你，觉得你的一举一动都很亲切，不高兴你比喜欢我更喜欢别人。你要是喜欢别人我会哭，但是还是喜欢你。我的勇气和你的勇气加起来，对付这个世界总够了吧?去向世界发出我们的声音，我一个人是不敢的，有了你，我就敢
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

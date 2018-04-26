@@ -1,0 +1,39 @@
+ <!--轮播  -->
+ <swiper indicator-dots='{{true}}' indicator-active-color='tomato' autoplay='{{true}}' interval='{{3000}}' duration="{{500}}">
+  <block wx:for="{{detailMassage.images}}" wx:key='{{index}}'>
+    <swiper-item>
+      <image src="{{item}}" bindtap='previewImage' id='{{index}}' class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper> 
+<!--详细信息  -->
+<view class='detail'>
+  <text class='title'>{{detailMassage.name}}</text>
+  <text class='phone'>电话 : {{detailMassage.phone}}</text>
+  <text class='phone'>地址 : {{detailMassage.address}}</text>
+  <text class='phone'>营业时间 : {{detailMassage.businessHours}}</text>
+</view>
+<!--评论  -->
+<view class='command' wx:for='{{detailMassage.comments}}' wx:key='{{index}}'>
+  <view class='top'>
+    <text class='userName'>{{item.name}}</text>
+    <view class='right'>
+      <text class='percent'>{{item.rating}}</text>
+      <text class='topTime'>{{item.date}}</text>
+    </view>
+  </view>
+  <view class='middle'>
+    <text>{{item.content}}</text>
+  </view>
+  <view class='bottom'>
+    <image  wx:for="{{item.images}}" wx:for-item='i' wx:key="{{index}}" src='{{handle.handleImg(i)}}'></image>
+  </view>
+</view>
+
+<wxs module='handle'>
+  module.exports = {
+    handleImg: function(str) {
+      return str.replace('w.h','100.100');
+    }
+  } 
+<wxs/> 

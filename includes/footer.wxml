@@ -1,0 +1,7 @@
+<view class="weui-footer">
+  <view class="weui-footer__links">
+    <navigator url="http://www.aluka.top" class="weui-footer__link">网页</navigator>
+    <navigator url="http://www.aluka.top" class="weui-footer__link">github</navigator>
+  </view>
+  <view class="weui-footer__text">Copyright © 2008-2016 bin.wang</view>
+</view>

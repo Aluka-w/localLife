@@ -1,0 +1,56 @@
+/* pages/list/list.wxss */
+/*搜索框weui的样式  */
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+
+/*媒体对象的样式  */
+.list {
+  background-color: #fff;
+  padding: 20rpx 10rpx;
+  display: flex;
+  border-top: 1rpx solid #eee;
+}
+.list-img {
+  width: 170rpx;
+  height: 190rpx;
+  margin-top: 5rpx;
+}
+.detail {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  margin-left: 20rpx;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.detail text {
+  font-size: 26rpx;
+  color: #678;
+}
+.detail .detail-title {
+  font-size: 30rpx;
+  color: #234;
+}
+.detail .detail-time {
+  font-size: 28rpx;
+  color: #456;
+}
+.score {
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #ee523d;
+  text-align: center;
+  height: 35rpx;
+  line-height: 35rpx;
+  padding: 5rpx;
+  margin: 20rpx 10rpx 0 0;
+  border-radius: 25rpx;
+}
