@@ -1,0 +1,36 @@
+﻿获取轮播图
+/slides
+  id		轮播图id
+  image		图片地址
+  link		是否跳转(如果有则跳转)
+  
+//获取分类列表
+/categories
+  id		分类id
+  name		分类名称
+  icon		分类图标
+
+//获取具体的分类信息
+/categories/分类id
+  id		分类id
+  name		分类名称
+  icon 		分类图标
+
+//获取分类下的所有商铺信息
+
+
+/categories/分类id/shops	
+  id 		分类id
+  name 		商铺名称
+  phone 	联系电话
+  address	联系地址
+  images	商铺图片
+
+分页参数 分页:?_page=1&_limit=10&q=搜索条件
+示例:http://locally.ittun.com/categories/1/shops?_page=1&_limit=2&q=%E9%B8%A1%E6%8E%92
+
+
+
+//详情  
+/shop?item=商铺信息id
+ 
